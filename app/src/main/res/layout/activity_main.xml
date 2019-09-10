@@ -5,6 +5,12 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/husker"
+        android:scaleType="centerCrop"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -22,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:textSize="14sp"
-                android:textColor="#616161"
+                android:textColor="#FFFFFF"
                 android:fontFamily="sans-serif-medium"
                 android:paddingTop="16dp"
                 android:paddingBottom="16dp"
@@ -34,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:textSize="56sp"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 android:fontFamily="sans-serif-light"
                 android:paddingBottom="24dp"
                 android:text="0" />
@@ -43,6 +49,7 @@
                 android:id="@+id/touchdown"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/button_border"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
@@ -53,6 +60,7 @@
                 android:id="@+id/fieldGoal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/button_border"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
@@ -63,6 +71,7 @@
                 android:id="@+id/extraPoint"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/button_border"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
@@ -73,21 +82,12 @@
                 android:id="@+id/safety"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/button_border"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
                 android:onClick="addTwoForHuskers"
                 android:text="Safety" />
-
-            <Button
-                android:id="@+id/penalty"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginBottom="8dp"
-                android:onClick="addPenaltyForHuskers"
-                android:text="Penalty" />
 
         </LinearLayout>
 
@@ -103,7 +103,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:textSize="14sp"
-                android:textColor="#616161"
+                android:textColor="#FFFFFF"
                 android:fontFamily="sans-serif-medium"
                 android:paddingTop="16dp"
                 android:paddingBottom="16dp"
@@ -115,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:textSize="56sp"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 android:fontFamily="sans-serif-light"
                 android:paddingBottom="24dp"
                 android:text="0" />
@@ -124,6 +124,7 @@
                 android:id="@+id/touchdown"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/button_border"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
@@ -134,6 +135,7 @@
                 android:id="@+id/fieldGoal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/button_border"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
@@ -144,6 +146,7 @@
                 android:id="@+id/extraPoint"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/button_border"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
@@ -154,21 +157,12 @@
                 android:id="@+id/safety"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/button_border"
                 android:layout_marginLeft="24dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginBottom="8dp"
                 android:onClick="addTwoForHawkeyes"
                 android:text="Safety" />
-
-            <Button
-                android:id="@+id/penalty"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginBottom="8dp"
-                android:onClick="addPenaltyForHawkeyes"
-                android:text="Penalty" />
 
         </LinearLayout>
 
@@ -177,6 +171,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/button_border"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginBottom="32dp"
